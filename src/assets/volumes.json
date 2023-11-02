@@ -1,0 +1,765 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 3012,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "u13hVoYVZa8C",
+      "etag": "wlbjW+dTAQ0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/u13hVoYVZa8C",
+      "volumeInfo": {
+        "title": "Planning Extreme Programming",
+        "authors": [
+          "Kent Beck",
+          "Martin Fowler"
+        ],
+        "publisher": "Addison-Wesley Professional",
+        "publishedDate": "2001",
+        "description": "Without careful ongoing planning, the software development process can fall apart. Extreme Programming (XP) is a new programming discipline, or methodology, that is geared toward the way that the vast majority of software development projects are handled -- in small teams. In this new book, noted software engineers Kent Beck and Martin Fowler show the reader how to properly plan a software development project with XP in mind. The authors lay out a proven strategy that forces the reader to plan as their software project unfolds, and therefore avoid many of the nasty problems that can potentially spring up along the way.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0201710919"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780201710915"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 162,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 6,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.4.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=u13hVoYVZa8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=u13hVoYVZa8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=u13hVoYVZa8C&printsec=frontcover&dq=programming&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=u13hVoYVZa8C&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Planning_Extreme_Programming.html?hl=&id=u13hVoYVZa8C"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=u13hVoYVZa8C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In this new book, noted software engineers Kent Beck and Martin Fowler show the reader how to properly plan a software development project with XP in mind."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "0Vv6DwAAQBAJ",
+      "etag": "suirKcAaj+g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/0Vv6DwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Rust Programming Language (Covers Rust 2018)",
+        "authors": [
+          "Steve Klabnik",
+          "Carol Nichols"
+        ],
+        "publisher": "No Starch Press",
+        "publishedDate": "2019-08-12",
+        "description": "The official book on the Rust programming language, written by the Rust development team at the Mozilla Foundation, fully updated for Rust 2018. The Rust Programming Language is the official book on Rust: an open source systems programming language that helps you write faster, more reliable software. Rust offers control over low-level details (such as memory usage) in combination with high-level ergonomics, eliminating the hassle traditionally associated with low-level languages. The authors of The Rust Programming Language, members of the Rust Core Team, share their knowledge and experience to show you how to take full advantage of Rust's features--from installation to creating robust and scalable programs. You'll begin with basics like creating functions, choosing data types, and binding variables and then move on to more advanced concepts, such as: Ownership and borrowing, lifetimes, and traits Using Rust's memory safety guarantees to build fast, safe programs Testing, error handling, and effective refactoring Generics, smart pointers, multithreading, trait objects, and advanced pattern matching Using Cargo, Rust's built-in package manager, to build, test, and document your code and manage dependencies How best to use Rust's advanced compiler with compiler-led programming techniques You'll find plenty of code examples throughout the book, as well as three chapters dedicated to building complete projects to test your learning: a number guessing game, a Rust implementation of a command line tool, and a multithreaded server. New to this edition: An extended section on Rust macros, an expanded chapter on modules, and appendixes on Rust development tools and editions.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781718500440"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1718500440"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 561,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=0Vv6DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=0Vv6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=0Vv6DwAAQBAJ&printsec=frontcover&dq=programming&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=0Vv6DwAAQBAJ&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Rust_Programming_Language_Covers_Rus.html?hl=&id=0Vv6DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=0Vv6DwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "New to this edition: An extended section on Rust macros, an expanded chapter on modules, and appendixes on Rust development tools and editions."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "l4zO3OWkdIsC",
+      "etag": "EmcduAzKaN4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/l4zO3OWkdIsC",
+      "volumeInfo": {
+        "title": "Extreme Programming Installed",
+        "authors": [
+          "Ron Jeffries",
+          "Ann Anderson",
+          "Chet Hendrickson"
+        ],
+        "publisher": "Addison-Wesley Professional",
+        "publishedDate": "2001",
+        "description": "Extreme Programming Installed explains the core principles of Extreme Programming and details each step in the XP development cycle. This book conveys the essence of the XP approach--techniques for implementation, obstacles likely to be encountered, and experience-based advice for successful execution.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0201708426"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780201708424"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 290,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.4.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=l4zO3OWkdIsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=l4zO3OWkdIsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=l4zO3OWkdIsC&dq=programming&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=l4zO3OWkdIsC&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Extreme_Programming_Installed.html?hl=&id=l4zO3OWkdIsC"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=l4zO3OWkdIsC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book conveys the essence of the XP approach--techniques for implementation, obstacles likely to be encountered, and experience-based advice for successful execution."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "5wBQEp6ruIAC",
+      "etag": "kSUKSz2FVzE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/5wBQEp6ruIAC",
+      "volumeInfo": {
+        "title": "The Pragmatic Programmer",
+        "subtitle": "From Journeyman to Master",
+        "authors": [
+          "Andrew Hunt",
+          "David Thomas"
+        ],
+        "publisher": "Addison-Wesley Professional",
+        "publishedDate": "1999-10-20",
+        "description": "What others in the trenches say about The Pragmatic Programmer... “The cool thing about this book is that it’s great for keeping the programming process fresh. The book helps you to continue to grow and clearly comes from people who have been there.” — Kent Beck, author of Extreme Programming Explained: Embrace Change “I found this book to be a great mix of solid advice and wonderful analogies!” — Martin Fowler, author of Refactoring and UML Distilled “I would buy a copy, read it twice, then tell all my colleagues to run out and grab a copy. This is a book I would never loan because I would worry about it being lost.” — Kevin Ruland, Management Science, MSG-Logistics “The wisdom and practical experience of the authors is obvious. The topics presented are relevant and useful.... By far its greatest strength for me has been the outstanding analogies—tracer bullets, broken windows, and the fabulous helicopter-based explanation of the need for orthogonality, especially in a crisis situation. I have little doubt that this book will eventually become an excellent source of useful information for journeymen programmers and expert mentors alike.” — John Lakos, author of Large-Scale C++ Software Design “This is the sort of book I will buy a dozen copies of when it comes out so I can give it to my clients.” — Eric Vought, Software Engineer “Most modern books on software development fail to cover the basics of what makes a great software developer, instead spending their time on syntax or technology where in reality the greatest leverage possible for any software team is in having talented developers who really know their craft well. An excellent book.” — Pete McBreen, Independent Consultant “Since reading this book, I have implemented many of the practical suggestions and tips it contains. Across the board, they have saved my company time and money while helping me get my job done quicker! This should be a desktop reference for everyone who works with code for a living.” — Jared Richardson, Senior Software Developer, iRenaissance, Inc. “I would like to see this issued to every new employee at my company....” — Chris Cleeland, Senior Software Engineer, Object Computing, Inc. “If I’m putting together a project, it’s the authors of this book that I want. . . . And failing that I’d settle for people who’ve read their book.” — Ward Cunningham Straight from the programming trenches, The Pragmatic Programmer cuts through the increasing specialization and technicalities of modern software development to examine the core process--taking a requirement and producing working, maintainable code that delights its users. It covers topics ranging from personal responsibility and career development to architectural techniques for keeping your code flexible and easy to adapt and reuse. Read this book, and you'll learn how to Fight software rot; Avoid the trap of duplicating knowledge; Write flexible, dynamic, and adaptable code; Avoid programming by coincidence; Bullet-proof your code with contracts, assertions, and exceptions; Capture real requirements; Test ruthlessly and effectively; Delight your users; Build teams of pragmatic programmers; and Make your developments more precise with automation. Written as a series of self-contained sections and filled with entertaining anecdotes, thoughtful examples, and interesting analogies, The Pragmatic Programmer illustrates the best practices and major pitfalls of many different aspects of software development. Whether you're a new coder, an experienced programmer, or a manager responsible for software projects, use these lessons daily, and you'll quickly see improvements in personal productivity, accuracy, and job satisfaction. You'll learn skills and develop habits and attitudes that form the foundation for long-term success in your career. You'll become a Pragmatic Programmer.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780132119177"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "013211917X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 346,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 7,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.18.11.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=5wBQEp6ruIAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=5wBQEp6ruIAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=5wBQEp6ruIAC&printsec=frontcover&dq=programming&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=5wBQEp6ruIAC&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Pragmatic_Programmer.html?hl=&id=5wBQEp6ruIAC"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=5wBQEp6ruIAC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "What others in the trenches say about The Pragmatic Programmer... “The cool thing about this book is that it’s great for keeping the programming process fresh."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "xIlyOiGOC6EC",
+      "etag": "Ybe+UHYZnb4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/xIlyOiGOC6EC",
+      "volumeInfo": {
+        "title": "Introduction to Functional Programming Using Haskell",
+        "authors": [
+          "Richard Bird"
+        ],
+        "publisher": "Pearson Educación",
+        "publishedDate": "1998",
+        "description": "After the success of the first edition, Introduction to Functional Programming using Haskell has been thoroughly updated and revised to provide a complete grounding in the principles and techniques of programming with functions. The second edition uses the popular language Haskell to express functional programs. There are new chapters on program optimisation, abstract datatypes in a functional setting, and programming in a monadic style. There are complete new case studies, and many new exercises. As in the first edition, there is an emphasis on the fundamental techniques for reasoning about functional programs, and for deriving them systematically from their specifications. The book is self-contained, assuming no prior knowledge of programming and is suitable as an introductory undergraduate text for first- or second-year students.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8483221764"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788483221761"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 382,
+        "printType": "BOOK",
+        "categories": [
+          "Computer programming"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.6.5.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=xIlyOiGOC6EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=xIlyOiGOC6EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=xIlyOiGOC6EC&printsec=frontcover&dq=programming&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=xIlyOiGOC6EC&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Introduction_to_Functional_Programming_U.html?hl=&id=xIlyOiGOC6EC"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Introduction_to_Functional_Programming_U-sample-pdf.acsm?id=xIlyOiGOC6EC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=xIlyOiGOC6EC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "After the success of the first edition, Introduction to Functional Programming using Haskell has been thoroughly updated and revised to provide a complete grounding in the principles and techniques of programming with functions."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "IL34DwAAQBAJ",
+      "etag": "wkQaIgrI42o",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/IL34DwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Audio Programming Book",
+        "authors": [
+          "Richard Boulanger",
+          "Victor Lazzarini"
+        ],
+        "publisher": "MIT Press",
+        "publishedDate": "2010-10-22",
+        "description": "An encyclopedic handbook on audio programming for students and professionals, with many cross-platform open source examples and a DVD covering advanced topics. This comprehensive handbook of mathematical and programming techniques for audio signal processing will be an essential reference for all computer musicians, computer scientists, engineers, and anyone interested in audio. Designed to be used by readers with varying levels of programming expertise, it not only provides the foundations for music and audio development but also tackles issues that sometimes remain mysterious even to experienced software designers. Exercises and copious examples (all cross-platform and based on free or open source software) make the book ideal for classroom use. Fifteen chapters and eight appendixes cover such topics as programming basics for C and C++ (with music-oriented examples), audio programming basics and more advanced topics, spectral audio programming; programming Csound opcodes, and algorithmic synthesis and music programming. Appendixes cover topics in compiling, audio and MIDI, computing, and math. An accompanying DVD provides an additional 40 chapters, covering musical and audio programs with micro-controllers, alternate MIDI controllers, video controllers, developing Apple Audio Unit plug-ins from Csound opcodes, and audio programming for the iPhone. The sections and chapters of the book are arranged progressively and topics can be followed from chapter to chapter and from section to section. At the same time, each section can stand alone as a self-contained unit. Readers will find The Audio Programming Book a trustworthy companion on their journey through making music and programming audio on modern computers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780262014465"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0262014467"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 917,
+        "printType": "BOOK",
+        "categories": [
+          "Music"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=IL34DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=IL34DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=IL34DwAAQBAJ&printsec=frontcover&dq=programming&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=IL34DwAAQBAJ&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Audio_Programming_Book.html?hl=&id=IL34DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Audio_Programming_Book-sample-pdf.acsm?id=IL34DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=IL34DwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "At the same time, each section can stand alone as a self-contained unit. Readers will find The Audio Programming Book a trustworthy companion on their journey through making music and programming audio on modern computers."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "OJwXEAAAQBAJ",
+      "etag": "OctYQ3LIsIo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/OJwXEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Beginning Rust Programming",
+        "authors": [
+          "Ric Messier"
+        ],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "2021-03-09",
+        "description": "Quickly learn the ropes with the Rust programming language using this practical, step-by-step guide In Beginning Rust Programming, accomplished programmer and author Ric Messier delivers a highly practical, real-world guide to coding with Rust. Avoiding dry, theoretical content and “Hello, world”-type tutorials of questionable utility, the book dives immediately into functional Rust programming that takes advantage of the language’s blazing speed and memory efficiency. Designed from the ground up to give you a running start to using the multiparadigm system programming language, this book will teach you to: Solve real-world computer science problems of practical importance Use Rust’s rich type system and ownership model to guarantee memory-safety and thread-safety Integrate Rust with other programming languages and use it for embedded devices Perfect for programmers with some experience in other languages, like C or C++, Beginning Rust Programming is also a great pick for students new to programming and seeking a user-friendly and robust language with which to start their coding career.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781119712978"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1119712971"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 416,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=OJwXEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=OJwXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=OJwXEAAAQBAJ&printsec=frontcover&dq=programming&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=OJwXEAAAQBAJ&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Beginning_Rust_Programming.html?hl=&id=OJwXEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Beginning_Rust_Programming-sample-pdf.acsm?id=OJwXEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=OJwXEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Designed from the ground up to give you a running start to using the multiparadigm system programming language, this book will teach you to: Solve real-world computer science problems of practical importance Use Rust’s rich type system ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "b-2oDwAAQBAJ",
+      "etag": "w1NrjQ5h+S4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/b-2oDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Python Programming in Context",
+        "authors": [
+          "Bradley N. Miller",
+          "David L. Ranum",
+          "Julie Anderson"
+        ],
+        "publisher": "Jones & Bartlett Learning",
+        "publishedDate": "2019-10-01",
+        "description": "Python Programming in Context, Third Edition provides a comprehensive and accessible introduction to Python fundamentals. Updated with the latest version of Python, the new Third Edition offers a thorough overview of multiple applied areas, including image processing, cryptography, astronomy, the Internet, and bioinformatics. Taking an active learning approach, each chapter starts with a comprehensive real-world project that teaches core design techniques and Python programming while engaging students. An ideal first language for learners entering the rapidly expanding field of computer science, Python gives students a solid platform of key problem-solving skills that translate easily across programming languages.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781284175554"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1284175553"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 516,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=b-2oDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=b-2oDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=b-2oDwAAQBAJ&printsec=frontcover&dq=programming&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=b-2oDwAAQBAJ&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Python_Programming_in_Context.html?hl=&id=b-2oDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Python_Programming_in_Context-sample-pdf.acsm?id=b-2oDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=b-2oDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Updated with the latest version of Python, the new Third Edition offers a thorough overview of multiple applied areas, including image processing, cryptography, astronomy, the Internet, and bioinformatics."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "2kLADwAAQBAJ",
+      "etag": "x/J16cGwfTQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/2kLADwAAQBAJ",
+      "volumeInfo": {
+        "title": "Data Science Programming All-in-One For Dummies",
+        "authors": [
+          "John Paul Mueller",
+          "Luca Massaron"
+        ],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "2020-01-09",
+        "description": "Your logical, linear guide to the fundamentals of data science programming Data science is exploding—in a good way—with a forecast of 1.7 megabytes of new information created every second for each human being on the planet by 2020 and 11.5 million job openings by 2026. It clearly pays dividends to be in the know. This friendly guide charts a path through the fundamentals of data science and then delves into the actual work: linear regression, logical regression, machine learning, neural networks, recommender engines, and cross-validation of models. Data Science Programming All-In-One For Dummies is a compilation of the key data science, machine learning, and deep learning programming languages: Python and R. It helps you decide which programming languages are best for specific data science needs. It also gives you the guidelines to build your own projects to solve problems in real time. Get grounded: the ideal start for new data professionals What lies ahead: learn about specific areas that data is transforming Be meaningful: find out how to tell your data story See clearly: pick up the art of visualization Whether you’re a beginning student or already mid-career, get your copy now and add even more meaning to your life—and everyone else’s!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781119626114"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1119626110"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 768,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=2kLADwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=2kLADwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=2kLADwAAQBAJ&printsec=frontcover&dq=programming&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=2kLADwAAQBAJ&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Data_Science_Programming_All_in_One_For.html?hl=&id=2kLADwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Data_Science_Programming_All_in_One_For-sample-pdf.acsm?id=2kLADwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=2kLADwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This friendly guide charts a path through the fundamentals of data science and then delves into the actual work: linear regression, logical regression, machine learning, neural networks, recommender engines, and cross-validation of models."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BWSTv8Q48YcC",
+      "etag": "UV7j5njiTCk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BWSTv8Q48YcC",
+      "volumeInfo": {
+        "title": "Programming in Lua",
+        "authors": [
+          "Roberto Ierusalimschy"
+        ],
+        "publisher": "Roberto Ierusalimschy",
+        "publishedDate": "2006",
+        "description": "Authored by Roberto Ierusalimschy, the chief architect of the language, this volume covers all aspects of Lua 5---from the basics to its API with C---explaining how to make good use of its features and giving numerous code examples. (Computer Books)",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788590379829"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8590379825"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 329,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BWSTv8Q48YcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BWSTv8Q48YcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=BWSTv8Q48YcC&printsec=frontcover&dq=programming&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=BWSTv8Q48YcC&dq=programming&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Programming_in_Lua.html?hl=&id=BWSTv8Q48YcC"
+      },
+      "saleInfo": {
+        "country": "VG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "VG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Programming_in_Lua-sample-epub.acsm?id=BWSTv8Q48YcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Programming_in_Lua-sample-pdf.acsm?id=BWSTv8Q48YcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BWSTv8Q48YcC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Authored by Roberto Ierusalimschy, the chief architect of the language, this volume covers all aspects of Lua 5---from the basics to its API with C---explaining how to make good use of its features and giving numerous code examples. ..."
+      }
+    }
+  ]
+}
