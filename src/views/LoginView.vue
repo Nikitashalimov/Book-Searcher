@@ -16,7 +16,7 @@
 export default {
   data() {
     return {
-      userToken: "",
+      userToken: localStorage.getItem("userToken") || "",
     };
   },
   methods: {
@@ -24,14 +24,21 @@ export default {
       const tokenPattern = /^[A-Za-z]{16}$/;
 
       if (tokenPattern.test(this.userToken)) {
-        console.log(this.userToken);
-        console.log("Успешный вход");
+        localStorage.setItem("userToken", this.userToken);
+        console.log(`Логин сохранен в LocalStorage ${this.userToken}`);
+
+        this.$router.replace("/");
       } else {
         console.log(this.userToken);
 
         console.log("Токен неверного формата");
       }
     },
+  },
+  created() {
+    if (localStorage.getItem("userToken")) {
+      this.$router.replace("/");
+    }
   },
 };
 </script>
