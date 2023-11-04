@@ -8,13 +8,7 @@
 
     <table class="books-results">
       <tbody>
-        <tr v-for="book in getBooks" :key="getId(book)" class="book">
-          <td>
-            <img :src="getThumbnail(book)" alt="Book cover" />
-          </td>
-          <td>{{ getTitle(book) }}</td>
-          <td>{{ getAuthors(book) }}</td>
-        </tr>
+        <Book v-for="book in getBooks" :key="book.id" :book="book"></Book>
       </tbody>
     </table>
   </main>
@@ -23,12 +17,15 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
+import Book from "../components/Book.vue";
 
 export default {
+  components: {
+    Book,
+  },
   data() {
     return {
       searchKeyWord: "",
-      searchResults: [],
       debounceTimer: null,
       emptyBookImage: "/src/assets/emptybook.png",
     };
@@ -42,34 +39,10 @@ export default {
       if (this.debouncedTimer) {
         clearTimeout(this.debouncedTimer);
       }
-      this.debouncedTimer = setTimeout(() => 
-        this.fetchBooks(this.searchKeyWord),
+      this.debouncedTimer = setTimeout(
+        () => this.fetchBooks(this.searchKeyWord),
         500
       );
-    },
-    getId(book) {
-      return book.id;
-    },
-    getThumbnail(book) {
-      const imageLinks = book.volumeInfo.imageLinks;
-      if (imageLinks) {
-        return imageLinks.thumbnail;
-      }
-      return this.emptyBookImage;
-    },
-    getTitle(book) {
-      return book.volumeInfo.title;
-    },
-    getAuthors(book) {
-      const authors = book.volumeInfo.authors;
-
-      if (authors) {
-        if (authors.length >= 3) {
-          return authors.slice(0, 2).join(", ");
-        }
-        return authors.join(", ");
-      }
-      return "The authors are unknown";
     },
   },
 };
