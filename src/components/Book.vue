@@ -1,10 +1,13 @@
 <template>
-  <tr class="book">
+  <tr class="book" @click="openMoreDetail">
     <td>
       <img :src="getThumbnail(book)" alt="Book cover" />
     </td>
     <td>{{ getTitle(book) }}</td>
     <td>{{ getAuthors(book) }}</td>
+  </tr>
+  <tr>
+    <td :colspan="3">{{ getDescription(book) }}</td>
   </tr>
 </template>
 
@@ -18,6 +21,7 @@ export default {
     };
   },
   methods: {
+    openMoreDetail() {},
     getThumbnail(book) {
       const imageLinks = book.volumeInfo.imageLinks;
       if (imageLinks) {
@@ -32,12 +36,12 @@ export default {
       const authors = book.volumeInfo.authors;
 
       if (authors) {
-        if (authors) {
-          return authors.slice(0, 2).join(", ");
-        }
-        return authors.join(", ");
+        return authors.slice(0, 2).join(", ");
       }
       return "The authors are unknown";
+    },
+    getDescription(book) {
+      return book.volumeInfo.description;
     },
   },
 };

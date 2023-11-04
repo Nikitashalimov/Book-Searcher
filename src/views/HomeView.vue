@@ -27,7 +27,6 @@ export default {
     return {
       searchKeyWord: "",
       debounceTimer: null,
-      emptyBookImage: "/src/assets/emptybook.png",
     };
   },
   computed: {
