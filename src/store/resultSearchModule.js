@@ -19,25 +19,27 @@ export const resultSearchModule = {
 	},
 	actions: {
 		async fetchBooks(context, searchKeyWord) {
-			context.commit('removeBooks');
+			if (!searchKeyWord) {
+				context.commit('removeBooks');
 
+			} else {
+				try {
+					const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchKeyWord}`);
 
-			try {
-				const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchKeyWord}`);
+					if (!res.ok) {
+						throw new Error("Failed to fetch books.");
+					}
 
-				if (!res.ok) {
-					throw new Error("Failed to fetch books.");
+					const data = await res.json();
+
+					if (data.items) {
+						context.commit('setBooks', data.items);
+					} else {
+						throw new Error("No books found.");
+					}
+				} catch (error) {
+					console.error("Error fetching books:", error);
 				}
-
-				const data = await res.json();
-
-				if (data.items) {
-					context.commit('setBooks', data.items);
-				} else {
-					throw new Error("No books found.");
-				}
-			} catch (error) {
-				console.error("Error fetching books:", error);
 			}
 		}
 	}
