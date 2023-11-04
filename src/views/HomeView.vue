@@ -8,7 +8,7 @@
 
     <table class="books-results">
       <tbody>
-        <tr v-for="book in searchResults" :key="getId(book)" class="book">
+        <tr v-for="book in getBooks" :key="getId(book)" class="book">
           <td>
             <img :src="getThumbnail(book)" alt="Book cover" />
           </td>
@@ -22,38 +22,30 @@
 
 
 <script>
+import { mapGetters, mapActions } from "vuex";
+
 export default {
   data() {
     return {
       searchKeyWord: "",
       searchResults: [],
       debounceTimer: null,
-      emptyBookImage: "/src/assets/empty book.png",
+      emptyBookImage: "/src/assets/emptybook.png",
     };
   },
+  computed: {
+    ...mapGetters(["getBooks"]),
+  },
   methods: {
+    ...mapActions(["fetchBooks"]),
     searchRequest() {
       if (this.debouncedTimer) {
         clearTimeout(this.debouncedTimer);
       }
-      this.debouncedTimer = setTimeout(this.searchBooks, 500);
-    },
-    searchBooks() {
-      if (!this.searchKeyWord) {
-        this.searchResults = [];
-        return;
-      }
-      const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${this.searchKeyWord}`;
-
-      fetch(apiUrl)
-        .then((response) => response.json())
-        .then((data) => {
-          this.searchResults = data.items;
-          console.log(this.searchResults);
-        })
-        .catch((error) => {
-          console.error("Ошибка при запросе к API:", error);
-        });
+      this.debouncedTimer = setTimeout(() => 
+        this.fetchBooks(this.searchKeyWord),
+        500
+      );
     },
     getId(book) {
       return book.id;
