@@ -4,7 +4,7 @@
     <input
       type="text"
       @keyup.enter="login"
-      v-model="userToken"
+      v-model="newToken"
       placeholder="Enter your userToken"
     />
     <button @click="login">Log In</button>
@@ -13,36 +13,40 @@
 
 
 <script>
+import { mapGetters, mapMutations } from "vuex";
+
 export default {
   data() {
     return {
-      userToken: localStorage.getItem("userToken") || "",
+      newToken: "",
     };
   },
+  computed: {
+    ...mapGetters(["getUserToken"]),
+  },
   methods: {
+    ...mapMutations(["setUserToken"]),
     login() {
       const tokenPattern = /^[A-Za-z]{16}$/;
 
-      if (tokenPattern.test(this.userToken)) {
-        localStorage.setItem("userToken", this.userToken);
-        console.log(`Логин сохранен в LocalStorage ${this.userToken}`);
+      if (tokenPattern.test(this.newToken)) {
+        this.setUserToken(this.newToken);
+        console.log(`Логин сохранен в LocalStorage ${this.newToken}`);
 
         this.$router.replace("/");
       } else {
-        console.log(this.userToken);
-
+        console.log(this.newToken);
         console.log("Токен неверного формата");
       }
     },
   },
   created() {
-    if (localStorage.getItem("userToken")) {
+    if (this.getUserToken) {
       this.$router.replace("/");
     }
   },
 };
 </script>
-
 
 
 <style>
