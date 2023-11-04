@@ -24,10 +24,7 @@ export default {
     openMoreDetail() {},
     getThumbnail(book) {
       const imageLinks = book.volumeInfo.imageLinks;
-      if (imageLinks) {
-        return imageLinks.thumbnail;
-      }
-      return this.emptyBookImage;
+      return imageLinks ? imageLinks.thumbnail : this.emptyBookImage;
     },
     getTitle(book) {
       return book.volumeInfo.title;
@@ -35,13 +32,13 @@ export default {
     getAuthors(book) {
       const authors = book.volumeInfo.authors;
 
-      if (authors) {
-        return authors.slice(0, 2).join(", ");
-      }
-      return "The authors are unknown";
+      return authors
+        ? authors.slice(0, 2).join(", ")
+        : "The authors are unknown";
     },
     getDescription(book) {
-      return book.volumeInfo.description;
+      const description = book.volumeInfo.description;
+      return description ? description : "Description is missing";
     },
   },
 };
