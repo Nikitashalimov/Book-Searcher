@@ -1,6 +1,7 @@
 <template>
   <main>
     <input
+      class="search_book_input"
       placeholder="Enter keywords"
       v-model="searchKeyWord"
       @input="searchRequest"
@@ -49,13 +50,40 @@ export default {
 
 
 <style scoped>
+@media (max-width: 767px) {
+  .search_book_input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .search_book_input {
+    width: 70%;
+  }
+}
+
+.search_book_input {
+  outline: none;
+  max-width: 80rem;
+  height: 3.2rem;
+  border: 2px solid;
+  border-radius: 1rem;
+  border-color: var(--outline-color);
+  background-color: var(--primary-color);
+  font-size: 1.6rem;
+  padding: 0 1rem;
+}
+
+.search_book_input::placeholder {
+  background-image: url("../assets/icons/icon_magnifier.png");
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: right center;
+}
+
 .books-results {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 50px;
-}
-
-.book {
-  height: 200px;
+  margin-top: 3rem;
 }
 </style>

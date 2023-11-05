@@ -2,8 +2,11 @@
   <header class="header">
     <h1 class="header_logo">Book researcher</h1>
     <div v-if="getUserToken" class="header_login_block">
-      <h3 class="user_token">{{ getUserToken }}</h3>
-      <button class="button_logout" @click="logout">Exit</button>
+      <div class="user_token">
+        <img src="../assets/icons/icon_user.png" alt="Logo user" />
+        <h3>{{ getUserToken }}</h3>
+      </div>
+      <button class="button_logout" @click="logout"></button>
     </div>
   </header>
 </template>
@@ -70,9 +73,16 @@ export default {
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
-  font-size: 1.6rem;
   font-family: Main_fonts;
-  color: var(--text-color);
+  color: var(--outline-color);
+}
+
+.user_token img {
+  height: 3rem;
+}
+
+.user_token h3 {
+  font-size: 1.6rem;
 }
 
 .button_logout {
@@ -81,9 +91,13 @@ export default {
   width: 6rem;
   height: 3.5rem;
   background-color: var(--primary-color);
-  border: 3px solid var(--outline-color);
+  border: 2px solid var(--outline-color);
   border-radius: 1rem;
   box-sizing: border-box;
+  background-image: url("../assets/icons/icon_exit.png");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button_logout:hover {
