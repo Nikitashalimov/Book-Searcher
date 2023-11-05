@@ -1,7 +1,65 @@
 @import './base.css';
 
+:root {
+  --primary-color: #C7C9C6;
+  /* Основной цвет */
+  --secondary-color: #9FA194;
+  /* Вторичный цвет */
+  --outline-color: #443927;
+  /* Обводной цвет */
+  --accent-color: #BA5809;
+  /* Акцентный цвет */
+  --text-color: #15100A;
+  /* Цвет текста */
+}
+
+@font-face {
+  font-family: Bold_fonts;
+  src: url(./fonts/PlayfairDisplay-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Main_fonts;
+  src: url(./fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@media (max-width:767px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #app {
+    width: 90%;
+  }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #app {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #app {
+    width: 66.6%;
+  }
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
 #app {
+  min-width: 360px;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem;
 }
