@@ -7,11 +7,9 @@
       @input="searchRequest"
     />
 
-    <table class="books-results">
-      <tbody>
-        <Book v-for="book in getBooks" :key="book.id" :book="book"></Book>
-      </tbody>
-    </table>
+    <div class="books-results">
+      <Book v-for="book in getBooks" :key="book.id" :book="book"></Book>
+    </div>
   </main>
 </template>
 
@@ -71,7 +69,13 @@ export default {
   border-color: var(--outline-color);
   background-color: var(--primary-color);
   font-size: 1.6rem;
-  padding: 0 1rem;
+  padding: 0 2.8rem;
+    box-shadow: 3px 3px 10px var(--outline-color);
+
+}
+
+.search_book_input:focus {
+  background-color: var(--secondary-color);
 }
 
 .search_book_input::placeholder {

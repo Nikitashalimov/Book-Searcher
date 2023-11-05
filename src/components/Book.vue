@@ -1,14 +1,14 @@
 <template>
-  <tr class="book" @click="openMoreDetail">
-    <td>
-      <img :src="getThumbnail(book)" alt="Book cover" />
-    </td>
-    <td>{{ getTitle(book) }}</td>
-    <td>{{ getAuthors(book) }}</td>
-  </tr>
-  <tr>
-    <td :colspan="3">{{ getDescription(book) }}</td>
-  </tr>
+  <div class="book" @click="openMoreDetail">
+    <div class="book_cover">
+      <img class="book_logo" :src="getThumbnail(book)" alt="Book cover" />
+      <h2 class="book_title">{{ getTitle(book) }}</h2>
+      <span class="book_authors">{{ getAuthors(book) }}</span>
+    </div>
+    <div class="book_description" v-if="isBookOpen">
+      <div>{{ getDescription(book) }}</div>
+    </div>
+  </div>
 </template>
 
 
@@ -18,10 +18,13 @@ export default {
   data() {
     return {
       emptyBookImage: "/src/assets/icons/icon_emptybool.png",
+      isBookOpen: false,
     };
   },
   methods: {
-    openMoreDetail() {},
+    openMoreDetail() {
+      this.isBookOpen = !this.isBookOpen;
+    },
     getThumbnail(book) {
       const imageLinks = book.volumeInfo.imageLinks;
       return imageLinks ? imageLinks.thumbnail : this.emptyBookImage;
@@ -47,6 +50,51 @@ export default {
 
 <style scoped>
 .book {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 5px 5px 15px var(--outline-color);
+  cursor: pointer;
+}
+
+.book:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.book_cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book_logo {
+  max-height: 180px;
+  width: 25%;
+  max-width: 120px;
+}
+
+.book_title {
+  font-family: Main_fonts;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  width: 40%;
+  text-align: left;
+}
+
+.book_authors {
+  font-size: 1.6rem;
+  width: 25%;
+  color: var(--text-color);
+  text-align: right;
+}
+
+.book_description {
+  font-family: Main_fonts;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  font-style: italic;
 }
 </style>

@@ -80,6 +80,7 @@ export default {
   background-color: var(--primary-color);
   text-align: center;
   font-size: 1.6rem;
+  box-shadow: 1px 1px 3px var(--outline-color);
 }
 
 .form_login_input {
@@ -87,7 +88,6 @@ export default {
 }
 
 .form_login_input:focus {
-  cursor: pointer;
   background-color: var(--secondary-color);
 }
 

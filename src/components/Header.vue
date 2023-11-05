@@ -99,6 +99,7 @@ export default {
   background-size: 1.6rem;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: 1px 1px 5px var(--outline-color);
 }
 
 .button_logout:hover {
