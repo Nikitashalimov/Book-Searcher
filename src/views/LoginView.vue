@@ -135,19 +135,22 @@ export default {
   font-size: 1.4rem;
 }
 
+:root {
+  --border-visible: 5px solid var(--secondary-color);
+  --border-invisible: 5px solid transparent;
+}
+
 .spinner {
   content: "";
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  border-left: 5px solid var(--secondary-color);
-  border-top: 5px solid var(--secondary-color);
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--secondary-color);
   margin-top: 10rem;
   margin-left: auto;
   margin-right: auto;
-  animation: spinner 0.8s linear infinite;
+  border-top: var(--border-visible);
+  animation: spinner 1.2s ease infinite,
+    changespinner 4s ease-in infinite reverse;
 }
 
 @keyframes spinner {
@@ -157,6 +160,28 @@ export default {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes changespinner {
+  0%,
+  100% {
+    border-left: var(--border-invisible);
+    border-right: var(--border-visible);
+    border-bottom: var(--border-visible);
+  }
+
+  25%,
+  75% {
+    border-left: var(--border-invisible);
+    border-right: var(--border-visible);
+    border-bottom: var(--border-invisible);
+  }
+
+  50% {
+    border-left: var(--border-invisible);
+    border-right: var(--border-invisible);
+    border-bottom: var(--border-invisible);
   }
 }
 </style>

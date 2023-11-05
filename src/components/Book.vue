@@ -17,7 +17,7 @@ export default {
   props: ["book"],
   data() {
     return {
-      emptyBookImage: "/src/assets/emptybook.png",
+      emptyBookImage: "/src/assets/icons/icon_emptybool.png",
     };
   },
   methods: {

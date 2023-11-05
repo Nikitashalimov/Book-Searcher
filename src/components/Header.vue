@@ -20,8 +20,9 @@ export default {
     ...mapGetters(["getUserToken"]),
   },
   methods: {
-    ...mapMutations(["exitUserToken"]),
+    ...mapMutations(["exitUserToken", "removeBooks"]),
     logout() {
+      this.removeBooks();
       this.exitUserToken();
       this.$router.replace("/login");
     },
@@ -95,7 +96,7 @@ export default {
   border-radius: 1rem;
   box-sizing: border-box;
   background-image: url("../assets/icons/icon_exit.png");
-  background-size: 2rem;
+  background-size: 1.6rem;
   background-repeat: no-repeat;
   background-position: center;
 }
