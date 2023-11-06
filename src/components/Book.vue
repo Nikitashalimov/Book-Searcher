@@ -1,7 +1,20 @@
 <template>
   <div class="book" @click="openMoreDetail">
     <div class="book_cover">
-      <img class="book_logo" :src="getThumbnail(book)" alt="Book cover" />
+      <img
+        v-if="isBookCover"
+        class="book_logo"
+        :src="getThumbnail(book)"
+        alt="Book cover"
+      />
+
+      <img
+        v-if="!isBookCover"
+        class="book_logo"
+        src="../assets/icons/icon_emptybook.png"
+        alt="Book cover"
+      />
+
       <div class="book_info">
         <h2 class="book_title">{{ getTitle(book) }}</h2>
         <span class="book_authors">{{ getAuthors(book) }}</span>
@@ -19,8 +32,7 @@ export default {
   props: ["book"],
   data() {
     return {
-      emptyBookImage:
-        import.meta.env.BASE_URL + "/src/assets/icons/icon_emptybook.png",
+      isBookCover: true,
       isBookOpen: false,
     };
   },
@@ -28,9 +40,12 @@ export default {
     openMoreDetail() {
       this.isBookOpen = !this.isBookOpen;
     },
+    setIsBookCover() {
+      this.isBookCover = !this.isBookCover;
+    },
     getThumbnail(book) {
       const imageLinks = book.volumeInfo.imageLinks;
-      return imageLinks ? imageLinks.thumbnail : this.emptyBookImage;
+      return imageLinks ? imageLinks.thumbnail : this.setIsBookCover();
     },
     getTitle(book) {
       return book.volumeInfo.title;
