@@ -12,7 +12,7 @@
       <button class="form_login_button" @click="login">Log In</button>
     </form>
 
-    <div class="spinner" v-if="isLoading"></div>
+    <div class="loader" v-if="isLoading"></div>
   </main>
 </template>
 
@@ -32,22 +32,40 @@ export default {
   },
   methods: {
     ...mapMutations(["setUserToken"]),
-    login() {
+
+    errorToken() {
+      this.$refs.tokenInput.classList.add("invalid-token");
+      setTimeout(() => {
+        this.$refs.tokenInput.classList.remove("invalid-token");
+      }, 400);
+    },
+
+    async loading() {
+      this.isLoading = true;
+      await new Promise((resolve) => {
+        setTimeout(() => {
+          resolve();
+        }, 3000);
+      });
+      this.isLoading = false;
+    },
+
+    async login() {
       const tokenPattern = /^[A-Za-z]{16}$/;
 
+      if (!this.newToken) {
+        this.errorToken();
+        return;
+      }
+
       if (tokenPattern.test(this.newToken)) {
-        this.isLoading = true;
-        setTimeout(() => {
-          this.setUserToken(this.newToken);
-          this.isLoading = false;
-          this.$router.replace("/");
-        }, 3000);
+        await this.loading();
+        this.setUserToken(this.newToken);
+        this.$router.replace("/");
       } else {
+        await this.loading();
         this.newToken = "";
-        this.$refs.tokenInput.classList.add("invalid-token");
-        setTimeout(() => {
-          this.$refs.tokenInput.classList.remove("invalid-token");
-        }, 400);
+        this.errorToken();
         return;
       }
     },
@@ -140,7 +158,7 @@ export default {
   --border-invisible: 5px solid transparent;
 }
 
-.spinner {
+.loader {
   content: "";
   width: 4rem;
   height: 4rem;
@@ -149,11 +167,11 @@ export default {
   margin-left: auto;
   margin-right: auto;
   border-top: var(--border-visible);
-  animation: spinner 1.2s ease infinite,
-    changespinner 4s ease-in infinite reverse;
+  animation: rotate 1.2s ease infinite,
+    resize 4s ease-in infinite reverse;
 }
 
-@keyframes spinner {
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
@@ -163,7 +181,7 @@ export default {
   }
 }
 
-@keyframes changespinner {
+@keyframes resize {
   0%,
   100% {
     border-left: var(--border-invisible);

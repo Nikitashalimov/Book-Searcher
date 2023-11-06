@@ -2,8 +2,10 @@
   <div class="book" @click="openMoreDetail">
     <div class="book_cover">
       <img class="book_logo" :src="getThumbnail(book)" alt="Book cover" />
-      <h2 class="book_title">{{ getTitle(book) }}</h2>
-      <span class="book_authors">{{ getAuthors(book) }}</span>
+      <div class="book_info">
+        <h2 class="book_title">{{ getTitle(book) }}</h2>
+        <span class="book_authors">{{ getAuthors(book) }}</span>
+      </div>
     </div>
     <div class="book_description" v-if="isBookOpen">
       <div>{{ getDescription(book) }}</div>
@@ -49,6 +51,35 @@ export default {
 
 
 <style scoped>
+@media (max-width: 767px) {
+  .book_info {
+    width: 60%;
+  }
+
+  .book_title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .book_authors {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .book_info {
+    width: 70%;
+  }
+
+  .book_title {
+    text-align: left;
+  }
+
+  .book_authors {
+    text-align: right;
+  }
+}
+
 .book {
   display: flex;
   flex-direction: column;
@@ -57,6 +88,10 @@ export default {
   background-color: var(--secondary-color);
   box-shadow: 5px 5px 15px var(--outline-color);
   cursor: pointer;
+}
+
+.book:hover {
+  box-shadow: 8px 8px 16px var(--outline-color);
 }
 
 .book:not(:last-child) {
@@ -75,19 +110,23 @@ export default {
   max-width: 120px;
 }
 
+.book_info {
+  display: flex;
+  flex-direction: column;
+}
+
 .book_title {
   font-family: Main_fonts;
   color: var(--text-color);
-  font-size: 1.6rem;
-  width: 40%;
-  text-align: left;
+  font-size: 1.8rem;
+  /* text-align: left; */
 }
 
 .book_authors {
   font-size: 1.6rem;
-  width: 25%;
   color: var(--text-color);
-  text-align: right;
+  /* text-align: right; */
+  font-style: italic;
 }
 
 .book_description {
