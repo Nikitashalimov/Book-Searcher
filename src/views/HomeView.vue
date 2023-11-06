@@ -70,8 +70,8 @@ export default {
   background-color: var(--primary-color);
   font-size: 1.6rem;
   padding: 0 2.8rem;
-    box-shadow: 3px 3px 10px var(--outline-color);
-
+  box-shadow: 3px 3px 10px var(--outline-color);
+  -webkit-box-shadow: 3px 3px 10px var(--outline-color);
 }
 
 .search_book_input:focus {

@@ -87,11 +87,13 @@ export default {
   border-radius: 1rem;
   background-color: var(--secondary-color);
   box-shadow: 5px 5px 15px var(--outline-color);
+  -webkit-box-shadow: 5px 5px 15px var(--outline-color);
   cursor: pointer;
 }
 
 .book:hover {
   box-shadow: 8px 8px 16px var(--outline-color);
+  -webkit-box-shadow: 8px 8px 16px var(--outline-color);
 }
 
 .book:not(:last-child) {

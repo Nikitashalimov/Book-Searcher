@@ -96,9 +96,11 @@ export default {
   border-radius: 1.5rem;
   border-color: var(--outline-color);
   background-color: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
   font-size: 1.6rem;
   box-shadow: 1px 1px 3px var(--outline-color);
+  -webkit-box-shadow: 1px 1px 3px var(--outline-color);
 }
 
 .form_login_input {
@@ -167,8 +169,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   border-top: var(--border-visible);
-  animation: rotate 1.2s ease infinite,
-    resize 4s ease-in infinite reverse;
+  animation: rotate 1.2s ease infinite, resize 4s ease-in infinite reverse;
 }
 
 @keyframes rotate {
