@@ -19,7 +19,8 @@ export default {
   props: ["book"],
   data() {
     return {
-      emptyBookImage: "/src/assets/icons/icon_emptybool.png",
+      emptyBookImage:
+        import.meta.env.BASE_URL + "/src/assets/icons/icon_emptybook.png",
       isBookOpen: false,
     };
   },
