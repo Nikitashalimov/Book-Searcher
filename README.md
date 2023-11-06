@@ -4,7 +4,7 @@ Book Searcher - поисковик для книг
 
 ### Попробовать
 ```sh
-https://nikitashalimov.github.io/Book-Searcher/login
+https://nikitashalimov.github.io/Book-Searcher/
 ```
 
 ### Установить и запустить
