@@ -63,7 +63,7 @@ export default {
 
 <style>
 .form_login {
-  margin-top: 6rem;
+  margin-top: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,7 +145,7 @@ export default {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  margin-top: 10rem;
+  margin-top: 27rem;
   margin-left: auto;
   margin-right: auto;
   border-top: var(--border-visible);
